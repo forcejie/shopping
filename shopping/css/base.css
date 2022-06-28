@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* css3盒子模型 */
+    box-sizing: border-box;
+}
+/* em和i斜体的文字不倾斜 */
+em,
+i {
+    font-style: normal;
+}
+/* 去掉li的小圆点 */
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+}
+a:hover{
+    color: #c81623;
+}
+
+button,
+input {
+    font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;    /* 默认有灰色边框我们需要手动去掉 */    
+    border: 0;
+    outline: none;
+    
+}
+
+body {    /* CSS3 抗锯齿形 让文字显示的更加清晰 */    
+    -webkit-font-smoothing: antialiased;    
+    background-color: #fff;    
+    font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;   
+     color: #666
+    }
+.hide,
+.none {    
+    display: none
+}
+/* 清除浮动 */
+.clearfix:after {    
+    visibility: hidden;    
+    clear: both;    
+    display: block;    
+    content: ".";    
+    height: 0
+}
+.clearfix 
+{    *zoom: 1
+}
